@@ -316,7 +316,88 @@ footer {
 	align-items: center;
 	gap: 10px; /* Abstand zwischen Text und Bild */
 }
+/* Tablet hochkant */
 @media (max-width: 768px) {
+  .desgin {
+    	flex-direction: column;
+    	padding: 10px;
+    	margin: 10px;
+    	align-items: center;
+  }
+  .abstand, .abstand1, .abstand2, #text, .text1 {
+    	margin: 10px;
+    	font-size: 16px;
+    	padding: 10px;
+  }
+  .bild, .bild1, .bild2 {
+    	max-width: 100%;
+    	height: auto;
+  }
+  .Farbe, .Farbe2, .Farbe3, .Farbe4 {
+    	font-size: 18px;
+    	padding: 10px;
+    	display: block;
+    	margin: 10px 0;
+  }
+
+  .Überschrift {
+    	margin-left: 0;
+    	text-align: center;
+  }
+  footer {
+    	margin: 10px;
+  }
+  .headline-row {
+    	flex-direction: column;
+    	align-items: flex-start;
+  }
+  .kontakt-zeile {
+    	flex-direction: column;
+    	align-items: flex-start;
+  }
+}
+/* Tablet quer */
+@media (max-width: 992px) {
+  .desgin {
+    	flex-direction: column;
+    	padding: 10px;
+    	margin: 10px;
+    	align-items: center;
+  }
+  .abstand, .abstand1, .abstand2, #text, .text1 {
+    	margin: 10px;
+    	font-size: 16px;
+    	padding: 10px;
+  }
+  .bild, .bild1, .bild2 {
+    	max-width: 100%;
+    	height: auto;
+  }
+  .Farbe, .Farbe2, .Farbe3, .Farbe4 {
+    	font-size: 18px;
+    	padding: 10px;
+    	display: block;
+    	margin: 10px 0;
+  }
+
+  .Überschrift {
+    	margin-left: 0;
+    	text-align: center;
+  }
+  footer {
+    	margin: 10px;
+  }
+  .headline-row {
+    	flex-direction: column;
+    	align-items: flex-start;
+  }
+  .kontakt-zeile {
+    	flex-direction: column;
+    	align-items: flex-start;
+  }
+}
+/* Smartphone */
+@media (max-width: 480px) {
   .desgin {
     	flex-direction: column;
     	padding: 10px;
