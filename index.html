@@ -1,10 +1,11 @@
 <html>
 <head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Technikhilfe.Leo</title>
 	<link href="style-index.css" rel="stylesheet" type="text/css">
 	<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header class ="head">
@@ -12,13 +13,11 @@
 		<img src="../technikhilfe.leo/Bilder-Videos/Screenshot 2025-07-19 130058.png" class="bild2" loading="lazy">
 	</div>
 	<div data-aos="fade-left" data-aos-duration="2500">
-		<a href="#text" onclick="smoothScrollToTarget('text', event)">
-			<div class="Anpassung">
-				<h1 class="text">Willkommen auf meiner Webseite!</h1>
-				<p>Technik. Klar. Verständlich. Funktioniert.<br><br> Ich helfe dir dabei, elektronische Geräte einfach und stressfrei zum Laufen zu bringen <br><br> mit Ruhe, Geduld und System.</p>
-				<a href="#text" onclick="smoothScrollToTarget('text', event)" class="Farbe4">Jetzt kontaktieren</a>
-			</div>
-		</a>
+		<div class="Anpassung">
+			<h1 class="text">Willkommen auf meiner Webseite!</h1>
+			<p>Technik. Klar. Verständlich. Funktioniert.<br><br> Ich helfe dir dabei, elektronische Geräte einfach und stressfrei zum Laufen zu bringen <br><br> mit Ruhe, Geduld und System.</p>
+			<a href="#text" onclick="smoothScrollToTarget('text', event)" class="Farbe4">Jetzt kontaktieren</a>
+		</div>
 	</div>
 </header>
 <!-- Karten -->
@@ -43,22 +42,23 @@
 <div data-aos="fade-left" data-aos-duration="3000">
   <div class="desgin">
     <div class="content-column">
-      <div class="headline-row">
-        <p class="abstand">Du hast ein neues Gerät gekauft – und weißt nicht, wo du anfangen sollst? Ich übernehme die komplette Einrichtung für dich: vom Anschließen bis zur sicheren Nutzung. Schnell, zuverlässig und verständlich erklärt.</p>
-        <button onclick="toggleInfo(this)" class="Farbe3">Mehr erfahren</button>
-      </div>
-      <div class="info hidden">
-        <p><strong>Leo hilft dir bei:</strong></p>
-		<ul>
-			<li>Gerät anschließen und verkabeln</li>
-			<li>WLAN oder Netzwerkverbindung herstellen</li>
-			<li>Software einrichten und Updates durchführen</li>
-			<li>Erste Grundeinstellungen (z. B. Sprache, Uhrzeit, Benutzerkonto)</li>
-			<li>Datenschutz & Sicherheit prüfen</li>
-			<li>Geräte miteinander verbinden (z. B. Smartphone & Smart-TV)</li>
-			<li>Kurze Einweisung in die Bedienung</li>
-		</ul>
-      </div>
+		<h2>Einrichtung elektronischer Geräte</h2>
+      	<div class="headline-row">
+        	<p class="abstand">Du hast ein neues Gerät gekauft – und weißt nicht, wo du anfangen sollst? Ich übernehme die komplette Einrichtung für dich: vom Anschließen bis zur sicheren Nutzung. Schnell, zuverlässig und verständlich erklärt.</p>
+        	<button onclick="toggleInfo(this)" class="Farbe3">Mehr erfahren</button>
+      	</div>
+      	<div class="info hidden">
+        	<p><strong>Leo hilft dir bei:</strong></p>
+			<ul>
+				<li>Gerät anschließen und verkabeln</li>
+				<li>WLAN oder Netzwerkverbindung herstellen</li>
+				<li>Software einrichten und Updates durchführen</li>
+				<li>Erste Grundeinstellungen (z. B. Sprache, Uhrzeit, Benutzerkonto)</li>
+				<li>Datenschutz & Sicherheit prüfen</li>
+				<li>Geräte miteinander verbinden (z. B. Smartphone & Smart-TV)</li>
+				<li>Kurze Einweisung in die Bedienung</li>
+			</ul>
+      	</div>
     </div>
     <a href="#text" onclick="smoothScrollToTarget('text', event)">
       <img src="../technikhilfe.leo/Bilder-Videos/pexels-pixabay-356056.jpg" class="bild1" loading="lazy"/>
@@ -72,6 +72,7 @@
 			<video class="bild1" src="Bilder-Videos/5762191-uhd_3840_2160_24fps.mp4" autoplay muted loop preload="none" playsinline></video>
 		</a>
 		<div class="content-column">
+			<h2>Erklären von elektronischer Geräte</h2>
 			<div class="headline-row">
 				<p class="abstand">Technik kann überfordern – muss sie aber nicht. Ich erkläre dir deine Geräte Schritt für Schritt, geduldig und verständlich. Damit du sie sicher und selbstständig nutzen kannst – ganz ohne Fachchinesisch.</p>
 				<button onclick="toggleInfo(this)" class="Farbe3">Mehr erfahren</button>
@@ -94,21 +95,22 @@
 <div data-aos="fade-left" data-aos-duration="3000">
 	<div class="desgin">
 		<div class="content-column">
-		<div class="headline-row">
-			<p class="abstand">Egal ob Homeoffice, Gaming oder Multimedia – ich helfe dir dabei, dein Setup sauber, funktional und technisch einwandfrei aufzubauen. Du bekommst ein einsatzbereites System, das funktioniert und dabei noch gut aussieht.</p>
-			<button onclick="toggleInfo(this)" class="Farbe3">Mehr erfahren</button>
-		</div>
-		<div class="info hidden">
-			<p><strong>Leo hilft dir bei:</strong></p>
-			<ul>
-				<li>Arbeitsplätzen & Homeoffice-Setups</li>
-				<li>Gaming- & Streaming-Stationen</li>
-				<li>Monitoren, PC, Kabel & Peripherie</li>
-				<li>Sauberem Kabelmanagement</li>
-				<li>Netzwerk & Internetverbindung</li>
-				<li>Systemstart, Einrichtung & kurzer Test</li>
-			</ul>
-		</div>
+			<h2>Büro und Setups aufbauen</h2>
+			<div class="headline-row">
+				<p class="abstand">Egal ob Homeoffice, Gaming oder Multimedia – ich helfe dir dabei, dein Setup sauber, funktional und technisch einwandfrei aufzubauen. Du bekommst ein einsatzbereites System, das funktioniert und dabei noch gut aussieht.</p>
+				<button onclick="toggleInfo(this)" class="Farbe3">Mehr erfahren</button>
+			</div>
+			<div class="info hidden">
+				<p><strong>Leo hilft dir bei:</strong></p>
+				<ul>
+					<li>Arbeitsplätzen & Homeoffice-Setups</li>
+					<li>Gaming- & Streaming-Stationen</li>
+					<li>Monitoren, PC, Kabel & Peripherie</li>
+					<li>Sauberem Kabelmanagement</li>
+					<li>Netzwerk & Internetverbindung</li>
+					<li>Systemstart, Einrichtung & kurzer Test</li>
+				</ul>
+			</div>
 		</div>
 		<a href="#text" onclick="smoothScrollToTarget('text', event)">
 			<img src="../technikhilfe.leo/Bilder-Videos/pexels-pramodtiwari-15919233.jpg" class="bild1" loading="lazy">
@@ -122,6 +124,7 @@
 			<video class="bild1" src="Bilder-Videos/946146-hd_1920_1080_30fps.mp4" autoplay muted loop preload="none" playsinline></video>
 		</a>
 		<div class="content-column">
+			<h2>Updates</h2>
 			<div class="headline-row">
 				<p class="abstand">Veraltete Software kann ein Sicherheitsrisiko sein oder zu Problemen führen. Ich sorge dafür, dass deine Geräte auf dem neuesten Stand sind – sicher, schnell und zuverlässig.</p>
 				<button onclick="toggleInfo(this)" class="Farbe3">Mehr erfahren</button>

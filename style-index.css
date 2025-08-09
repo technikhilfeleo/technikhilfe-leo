@@ -4,6 +4,8 @@ body {
 	background-color: #f4f4f9;
 	color: #1e1e1e;
 	font-family: Arial, sans-serif;
+	padding: 0;
+  	overflow-x: hidden;
 }
 h1, h2, h3, h4, h5 {
   color: #2d3e50;
@@ -12,7 +14,8 @@ header {
 	height: auto;
 	min-height: 500px;
 	box-shadow: 0px 5px 13px 2px #C2C2C2;
-	width: 100%;
+  	max-width: 100%;
+	box-sizing: border-box;
 	position: relative;
 	overflow: hidden;
 }
@@ -58,14 +61,16 @@ body {
 	box-shadow: 0 0 10px #007acc;
 }
 .Anpassung:hover{
-	width: 50%;
-	padding: 20px;
+	width: auto;
+	max-width: 50%;
+	padding: 10%;
 	border: 2px solid;
 	background-color: white;
 	color: #1e1e1e;
 	border-color: #2d3e50;
 	box-shadow: 0px 5px 13px 2px #a80000;
-	margin: 25%;
+	margin: auto;
+	margin-top: 25%;
 }
 .abstand2:hover{
 	border-style: solid;
@@ -109,26 +114,15 @@ body {
 	padding: 5px;
 }
 .Farbe3{
-	margin-left:-25%;
 	font-weight: 500px;
 	border-style: solid;
-	border-width: 3px;
+	border-width: 2px;
 	border-radius: 10px;
-	padding: 5px;
+	padding: 2%;
 	transition: all 0.3s ease;
 	overflow: hidden;
 	min-width: 80px;
 }	
-.Farbe3:hover{
-	border-width: 4px;
-}
-.Farbe3:hover::after{
-	margin-left:20%;
-	background-color: white;
-	color: black;
-	border-color: Black;
-	border-width: 4px;
-}
 .Farbe4{
 	font-weight: 500px;
 	border-style: solid;
@@ -139,24 +133,8 @@ body {
 	overflow: hidden;
 	max-width: 300px;
 }
-.Farbe4:hover::after{
-	margin-left:20%;
-	background-color: white;
-	color: black;
-	border-color: Black;
-	border-width: 4px;
-}
+
 /* Bilder */
-.bild{
-	width: auto;
-	max-width: 600px;
-	height: auto;
-	max-height: 380px;
-	border-style: solid;
-	border-width: 0px;
-	border-radius: 100px;
-	border-color: black;
-}
 .bild1{
 	width: auto;
 	max-width: 600px;
@@ -166,6 +144,7 @@ body {
 	border-width: 0px;
 	border-radius: 100px;
 	border-color: black;
+	margin-left: 2%;
 }
 .bild3{
 	width: auto;
@@ -186,14 +165,16 @@ body {
 	z-index: auto;
 }
 .Anpassung{
-	width: 50%;
-	padding: 20px;
+	width: auto;
+	max-width: 50%;
+	padding: 10%;
 	border: 2px solid;
 	background-color: white;
 	color: #1e1e1e;
 	border-color: #2d3e50;
 	box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-	margin: 25%;
+	margin: auto;
+	margin-top: 25%;
 }
 .text{
 	text-align: center;
@@ -206,19 +187,19 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding: 20px;
+	padding: 5%;
 	border: 2px solid black;
-	margin: 20px 40px 0 40px;
+	margin: 3% 5% 0 5%;
 	box-shadow: 0px 5px 13px 2px #C2C2C2;
 	background-color: rgba(111,111,111);
 }
 .abstand{
-	margin-right: 200px;
-	margin-left: 40px;
+	margin-right: 20%;
+	margin-left: 5%;
 	font-size: 20px;		
 }
 .abstand1{
-	margin: 20px;
+	margin: 4%;
 }
 .abstand2{
 	border-style: solid;
@@ -357,10 +338,7 @@ footer {
     	display: block;
     	margin: 10px 0;
   }
-  .Anpassung {
-    	margin-left: 0;
-    	margin-right: 0;
-  }
+
   .Überschrift {
     	margin-left: 0;
     	text-align: center;
@@ -394,7 +372,7 @@ header.head {
   	.bild2 {
     	margin-bottom: 20px;
   	}
-  	.Anpassung {
-    	margin: 0;
-  	}
+	.Anpassung {
+    	margin-top: 0;
+  }
 }
