@@ -1,4 +1,4 @@
-/* Allgemeingültiger Kram (Shift+Alt+A)*/
+/* Allgemeingültiger Kram */
 html, body {
 	margin: 0;
 	background-color: #f4f4f9;
@@ -20,12 +20,16 @@ header {
 	position: relative;
 	overflow: hidden;
 }
+
+/* Bilder global responsive */
 img, .bild, .bild1, .bild2, .bild3 {
+  display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
   object-fit: contain;
 }
+
+/* Links */
 a{
 	text-decoration: none;
 }
@@ -38,6 +42,7 @@ body {
 	background-color: rgba(128,128,128);
 	color: white;
 }
+
 /* Tablet hochkant */
 @media (max-width: 768px) {
   .desgin {
@@ -51,15 +56,10 @@ body {
     	font-size: 16px;
     	padding: 10px;
   }
-  .bild2 {
-    	max-width: 100%;
-    	height: auto;
-  }
-    .bild1{
-		max-width: 30%;
-		height: auto;
-		min-width: 300px;
-		min-height: 150px;
+  .bild1 {
+    	width: 100%;
+    	min-width: unset;
+    	min-height: unset;
   }
   .Farbe, .Farbe2, .Farbe3, .Farbe4 {
     	font-size: 18px;
@@ -67,7 +67,6 @@ body {
     	display: block;
     	margin: 10px 0;
   }
-
   .Überschrift {
     	margin-left: 0;
     	text-align: center;
@@ -75,23 +74,15 @@ body {
   footer {
     	margin: 10px;
   }
-  .headline-row {
-    	flex-direction: column;
-    	align-items: flex-start;
-  }
+  .headline-row,
   .kontakt-zeile {
     	flex-direction: column;
     	align-items: flex-start;
   }
-  .Anpassung{
-	margin-top: auto;
-  }
 }
+
 /* Tablet quer */
 @media (max-width: 992px) {
-  .Anpassung{
-	margin-top: auto;
-  }
   .desgin {
     	flex-direction: column;
     	padding: 10px;
@@ -103,15 +94,10 @@ body {
     	font-size: 16px;
     	padding: 10px;
   }
-   .bild2 {
-    	max-width: 100%;
-    	height: auto;
-  }
-  .bild1{
-	max-width: 30%;
-	height: auto;
-	min-width: 300px;
-	min-height: 150px;
+  .bild1 {
+    	width: 100%;
+    	min-width: unset;
+    	min-height: unset;
   }
   .Farbe, .Farbe2, .Farbe3, .Farbe4 {
     	font-size: 18px;
@@ -119,7 +105,6 @@ body {
     	display: block;
     	margin: 10px 0;
   }
-
   .Überschrift {
     	margin-left: 0;
     	text-align: center;
@@ -127,15 +112,13 @@ body {
   footer {
     	margin: 10px;
   }
-  .headline-row {
-    	flex-direction: column;
-    	align-items: flex-start;
-  }
+  .headline-row,
   .kontakt-zeile {
     	flex-direction: column;
     	align-items: flex-start;
   }
 }
+
 /* Smartphone */
 @media (max-width: 480px) {
   .desgin {
@@ -149,13 +132,10 @@ body {
     	font-size: 16px;
     	padding: 10px;
   }
-    .bild2 {
-    	max-width: 100%;
-    	height: auto;
-  }
-  .bild1{
-	max-width: 10%;
-	height: auto;
+  .bild1 {
+    	width: 100%;
+    	min-width: unset;
+    	min-height: unset;
   }
   .Farbe, .Farbe2, .Farbe3, .Farbe4 {
     	font-size: 18px;
@@ -163,7 +143,6 @@ body {
     	display: block;
     	margin: 10px 0;
   }
-
   .Überschrift {
     	margin-left: 0;
     	text-align: center;
@@ -171,21 +150,16 @@ body {
   footer {
     	margin: 10px;
   }
-  .headline-row {
-    	flex-direction: column;
-    	align-items: flex-start;
-  }
+  .headline-row,
   .kontakt-zeile {
     	flex-direction: column;
     	align-items: flex-start;
   }
-  .Anpassung{
-	margin-top: auto;
-  }
 }
+
 header.head {
   display: flex;
-  min-height: 500px; /* Höhe anpassen */
+  min-height: 500px;
   width: 100%;
 }
 /* Handy: Bild über Text */
@@ -205,65 +179,47 @@ header.head {
   }
 }
 
-/* Hover */
+/* Hover-Effekte */
 @media (hover: hover) and (pointer: fine) {
-.Farbe:hover, .Farbe2:hover, .Farbe3:hover, .Farbe4:hover {
-	background-color: #007acc;
-	color: white;
-	border-color: #2d3e50;
-} 
-.bild:hover, .bild1:hover{
-	min-width: 300px;
-	min-height: 150px;
-	width: auto;
-	height: auto;
-	max-width: 600px;
-	max-height: 380px;
-	border-style: solid;
-	border-width: 0px;
-	border-radius: 100px;
-	border-color: black;
-	box-shadow: 0px 5px 13px 2px #a80000;
+  .Farbe:hover, .Farbe2:hover, .Farbe3:hover, .Farbe4:hover {
+    background-color: #007acc;
+    color: white;
+    border-color: #2d3e50;
+  } 
+  .bild:hover, .bild1:hover{
+    max-width: 600px;
+    max-height: 380px;
+    border-radius: 100px;
+    box-shadow: 0px 5px 13px 2px #a80000;
+  }
+  .bild3:hover{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px #007acc;
+  }
+  .Anpassung:hover{
+    max-width: 50%;
+    padding: 10%;
+    border: 2px solid;
+    background-color: white;
+    color: #1e1e1e;
+    border-color: #2d3e50;
+    box-shadow: 0px 5px 13px 2px #a80000;
+    margin: auto;
+    margin-top: 25%;
+  }
+  .abstand2:hover{
+    padding: 3%;
+    font-size: 20px;
+    background-color: white;
+    color: #1e1e1e;
+    border-color: #2d3e50;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  }
 }
-.bild3:hover{
-	width: auto;
-	max-width: 50px;
-	height: auto;
-	max-height: 50px;
-	border-style: solid;
-	border-width: 0px;
-	border-radius: 100px;
-	border-color: black;
-	box-shadow: 0 0 10px #007acc;
-}
-.Anpassung:hover{
-	width: auto;
-	max-width: 50%;
-	padding: 10%;
-	border: 2px solid;
-	background-color: white;
-	color: #1e1e1e;
-	border-color: #2d3e50;
-	box-shadow: 0px 5px 13px 2px #a80000;
-	margin: auto;
-	margin-top: 25%;
-}
-.abstand2:hover{
-	border-style: solid;
-	border-width: 10px;
-	border-width: 2px;
-	padding: 3%;
-	font-size: 20px;
-	margin-top: 3%;
-	margin-left: 4%;
-	margin-right: 4%;
-	background-color: white;
-	color: #1e1e1e;
-	border-color: #2d3e50;
-	box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-}
-}
-/* Links */
+
+/* Buttons & Links */
 .Farbe, .Farbe2, .Farbe3, .Farbe4 {
 	background-color: #2d3e50;
 	color: white;
@@ -273,7 +229,6 @@ header.head {
 }
 .Farbe{
 	margin-right: 10px;
-	font-weight: 500px;
 	font-size: 30px;
 	border-style: solid;
 	border-width: 3px;
@@ -282,7 +237,6 @@ header.head {
 }
 .Farbe2{
 	margin-top: -15px;
-	font-weight: 500px;
 	font-size: 40px;
 	border-style: solid;
 	border-width: 3px;
@@ -290,7 +244,6 @@ header.head {
 	padding: 5px;
 }
 .Farbe3{
-	font-weight: 500px;
 	border-style: solid;
 	border-width: 2px;
 	border-radius: 10px;
@@ -300,7 +253,6 @@ header.head {
 	min-width: 80px;
 }	
 .Farbe4{
-	font-weight: 500px;
 	border-style: solid;
 	border-width: 3px;
 	border-radius: 10px;
@@ -310,16 +262,16 @@ header.head {
 	max-width: 300px;
 }
 
-/* Bilder */
+/* Bilder (Desktop) */
 @media (min-width: 1024px) {
     .bild1 {
         max-width: 600px;
 		max-height: 380px;
     }
 }
+
+/* Bild-Styles */
 .bild1{
-	width: auto;
-	height: auto;
 	border-style: solid;
 	border-width: 0px;
 	border-radius: 100px;
@@ -327,16 +279,10 @@ header.head {
 	margin-left: 2%;
 }
 .bild3{
-	width: auto;
 	max-width: 50px;
-	height: auto;
 	max-height: 50px;
-	border-style: solid;
-	border-width: 0px;
 	border-radius: 100px;
-	border-color: black;
 }
-/* Head */
 .bild2{
 	width: 100%;
 	position: relative;
@@ -359,10 +305,8 @@ header.head {
 .text{
 	text-align: center;
 }
-/* Irgendwas */
-.größe{
-	font-weight: 100px;
-}
+
+/* Layout-Elemente */
 .desgin {
 	display: flex;
 	justify-content: space-between;
@@ -382,9 +326,6 @@ header.head {
 	margin: 4%;
 }
 .abstand2{
-	border-style: solid;
-	border-width: 10px;
-	border-width: 2px;
 	padding: 3%;
 	font-size: 20px;
 	margin-top: 3%;
@@ -396,22 +337,10 @@ header.head {
 	box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 }
 #text{
-	border-style: solid;
-	border-width: 10px;
-	border-width: 2px;
 	padding: 20px;
 	font-size: 20px;
 	margin-right: 20px;
 	margin-left: 20px;
-	background-color: white;
-	color: #1e1e1e;
-	border-color: #2d3e50;
-	box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
-}
-.desgin{
-	border-style: solid;
-	border-width: 2px;
-	margin-top: 20px;
 	background-color: white;
 	color: #1e1e1e;
 	border-color: #2d3e50;
@@ -447,44 +376,26 @@ footer {
   	gap: 16px;
   	margin-bottom: 10px;
 }
-.info {
+.info, .info1 {
 	margin-top: 10px;
-	margin-right: 20px;
 	padding: 10px 14px;
 	background-color: #2d3e50;
 	border-radius: 8px;
 	font-size: 14px;
 	line-height: 1.5;
-	transition: all 0.3s ease;
 	color: white;
 }
-.info.hidden {
-  	display: none;
-}
-.info1 {
-	margin-top: 10px;
-	margin-left: 20px;
-	padding: 10px 14px;
-	background-color: #2d3e50;
-	border-radius: 8px;
-	font-size: 14px;
-	line-height: 1.5;
-	transition: all 0.3s ease;
-	color: white;
-}
-.info1.hidden {
+.info.hidden, .info1.hidden {
   	display: none;
 }
 .content-column {
 	display: flex;
 	flex-direction: column;
 	flex: 1;
+	margin: 2%;
 }
 .text1{
-	justify-content: space-between;
- 	align-items: flex-start;
 	padding: 20px;
-	border: 2px solid;
 	margin: 20px 40px 0 40px;
 	background-color: white;
 	color: #1e1e1e;
@@ -494,5 +405,5 @@ footer {
 .kontakt-zeile {
 	display: flex;
 	align-items: center;
-	gap: 10px; /* Abstand zwischen Text und Bild */
+	gap: 10px;
 }
