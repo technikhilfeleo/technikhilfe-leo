@@ -58,6 +58,8 @@ body {
     .bild1{
 		max-width: 30%;
 		height: auto;
+		min-width: 300px;
+		min-height: 150px;
   }
   .Farbe, .Farbe2, .Farbe3, .Farbe4 {
     	font-size: 18px;
@@ -108,6 +110,8 @@ body {
   .bild1{
 	max-width: 30%;
 	height: auto;
+	min-width: 300px;
+	min-height: 150px;
   }
   .Farbe, .Farbe2, .Farbe3, .Farbe4 {
     	font-size: 18px;
@@ -145,9 +149,13 @@ body {
     	font-size: 16px;
     	padding: 10px;
   }
-   .bild1, .bild2 {
+    .bild2 {
     	max-width: 100%;
     	height: auto;
+  }
+  .bild1{
+	max-width: 25%;
+	height: auto;
   }
   .Farbe, .Farbe2, .Farbe3, .Farbe4 {
     	font-size: 18px;
@@ -310,8 +318,6 @@ header.head {
     }
 }
 .bild1{
-	min-width: 300px;
-	min-height: 150px;
 	width: auto;
 	height: auto;
 	border-style: solid;
