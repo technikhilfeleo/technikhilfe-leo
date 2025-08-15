@@ -1,20 +1,29 @@
-/* Allgemeingültiger Kram */
+/* ===============================
+   Allgemeingültiger Kram
+   Farbpalette basierend auf Logo:
+   - Dunkelblau Haupt: #171733
+   - Weiß: #ffffff
+   - Hellweiß: #fafafa
+   - Dunkelblau Nuancen: #181834, #191935, #161733
+   - Akzent-Rot: #87192b
+   =============================== */
+
 html, body {
 	margin: 0;
-	background-color: #f4f4f9;
-	color: #1e1e1e;
+	background-color: #fafafa;
+	color: #171733;
 	font-family: Arial, sans-serif;
 	padding: 0;
   	overflow-x: hidden;
 	max-width: 100%;
 }
 h1, h2, h3, h4, h5 {
-  color: #2d3e50;
+	color: #171733;
 }
 header { 
 	height: auto;
 	min-height: 500px;
-	box-shadow: 0px 5px 13px 2px #C2C2C2;
+	box-shadow: 0px 5px 13px 2px #e6e6ea;
   	max-width: 100%;
 	box-sizing: border-box;
 	position: relative;
@@ -30,7 +39,7 @@ img, .bild, .bild1, .bild2, .bild3 {
 }
 
 /* Links */
-a{
+a {
 	text-decoration: none;
 }
 a:not([class]) {
@@ -39,8 +48,8 @@ a:not([class]) {
   color: inherit;
 }
 body {
-	background-color: rgba(128,128,128);
-	color: white;
+	background-color: #171733;
+	color: #ffffff;
 }
 
 /* Tablet hochkant */
@@ -182,52 +191,52 @@ header.head {
 /* Hover-Effekte */
 @media (hover: hover) and (pointer: fine) {
   .Farbe:hover, .Farbe2:hover, .Farbe3:hover, .Farbe4:hover {
-    background-color: #007acc;
-    color: white;
-    border-color: #2d3e50;
+    background-color: #87192b;
+    color: #ffffff;
+    border-color: #ffffff;
   } 
   .bild:hover, .bild1:hover{
     max-width: 600px;
     max-height: 380px;
     border-radius: 100px;
-    box-shadow: 0px 5px 13px 2px #a80000;
+    box-shadow: 0px 5px 13px 2px #87192b;
   }
   .bild3:hover{
     max-width: 50px;
     max-height: 50px;
     border-radius: 100px;
-    box-shadow: 0 0 10px #007acc;
+    box-shadow: 0 0 10px #87192b;
   }
   .Anpassung:hover{
     max-width: 50%;
     padding: 10%;
     border: 2px solid;
-    background-color: white;
-    color: #1e1e1e;
-    border-color: #2d3e50;
-    box-shadow: 0px 5px 13px 2px #a80000;
+    background-color: #ffffff;
+    color: #171733;
+    border-color: #87192b;
+    box-shadow: 0px 5px 13px 2px #87192b;
     margin: auto;
     margin-top: 25%;
   }
   .abstand2:hover{
     padding: 3%;
     font-size: 20px;
-    background-color: white;
-    color: #1e1e1e;
-    border-color: #2d3e50;
+    background-color: #ffffff;
+    color: #171733;
+    border-color: #87192b;
     box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
   }
 }
 
 /* Buttons & Links */
 .Farbe, .Farbe2, .Farbe3, .Farbe4 {
-	background-color: #2d3e50;
-	color: white;
-	border-color: #007acc;
+	background-color: #171733;
+	color: #ffffff;
+	border-color: #87192b;
 	border-width: 2px;
 	font-weight: bold;
 }
-.Farbe{
+.Farbe {
 	margin-right: 10px;
 	font-size: 30px;
 	border-style: solid;
@@ -235,7 +244,7 @@ header.head {
 	border-radius: 10px;
 	padding: 5px;
 }
-.Farbe2{
+.Farbe2 {
 	margin-top: -15px;
 	font-size: 40px;
 	border-style: solid;
@@ -243,7 +252,7 @@ header.head {
 	border-radius: 15px;
 	padding: 5px;
 }
-.Farbe3{
+.Farbe3 {
 	border-style: solid;
 	border-width: 2px;
 	border-radius: 10px;
@@ -252,7 +261,7 @@ header.head {
 	overflow: hidden;
 	min-width: 80px;
 }	
-.Farbe4{
+.Farbe4 {
 	border-style: solid;
 	border-width: 3px;
 	border-radius: 10px;
@@ -271,38 +280,38 @@ header.head {
 }
 
 /* Bild-Styles */
-.bild1{
+.bild1 {
 	border-style: solid;
 	border-width: 0px;
 	border-radius: 100px;
-	border-color: black;
+	border-color: #171733;
 	margin-left: 2%;
 }
-.bild3{
+.bild3 {
 	max-width: 50px;
 	max-height: 50px;
 	border-radius: 100px;
 }
-.bild2{
+.bild2 {
 	width: 100%;
 	position: relative;
 	height: 100%;
 	object-fit: cover;
 	z-index: auto;
 }
-.Anpassung{
+.Anpassung {
 	width: auto;
 	max-width: 50%;
 	padding: 10%;
 	border: 2px solid;
-	background-color: white;
-	color: #1e1e1e;
-	border-color: #2d3e50;
+	background-color: #ffffff;
+	color: #171733;
+	border-color: #171733;
 	box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 	margin: auto;
 	margin-top: 25%;
 }
-.text{
+.text {
 	text-align: center;
 }
 
@@ -312,62 +321,62 @@ header.head {
 	justify-content: space-between;
 	align-items: flex-start;
 	padding: 5%;
-	border: 2px solid black;
+	border: 2px solid #171733;
 	margin: 3% 5% 0 5%;
-	box-shadow: 0px 5px 13px 2px #C2C2C2;
-	background-color: rgba(111,111,111);
+	background-color: #ffffff;
+	color: #171733;
 }
-.abstand{
+.abstand {
 	margin-right: 20%;
 	margin-left: 5%;
 	font-size: 20px;		
 }
-.abstand1{
+.abstand1 {
 	margin: 4%;
 }
-.abstand2{
+.abstand2 {
 	padding: 3%;
 	font-size: 20px;
 	margin-top: 3%;
 	margin-left: 4%;
 	margin-right: 4%;
-	background-color: white;
-	color: #1e1e1e;
-	border-color: #2d3e50;
+	background-color: #ffffff;
+	color: #171733;
+	border-color: #171733;
 	box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 }
-#text{
+#text {
 	padding: 20px;
 	font-size: 20px;
 	margin-right: 20px;
 	margin-left: 20px;
-	background-color: white;
-	color: #1e1e1e;
-	border-color: #2d3e50;
+	background-color: #ffffff;
+	color: #171733;
+	border-color: #171733;
 	box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 }
-.color{
-	background-color: white;
-	color: #1e1e1e;
-	border-color: #2d3e50;
+.color {
+	background-color: #ffffff;
+	color: #171733;
+	border-color: #171733;
 	box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 }
-.Überschrift{
+.Überschrift {
 	text-align: center;
 }
-.footer{
-	border-style:solid;
+.footer {
+	border-style: solid;
 	border-width: 2px;
-	border-color: black;
+	border-color: #171733;
 	padding: 15px;
 }
 footer {
 	margin-top: 3%;
 	margin-left: 8%;
 	margin-right: 8%;	
-	background-color: white;
-	color: #1e1e1e;
-	border-color: #2d3e50;
+	background-color: #ffffff;
+	color: #171733;
+	border-color: #171733;
 	box-shadow: 0px 4px 12px rgba(0,0,0,0.1);		
 }
 .headline-row {
@@ -379,11 +388,11 @@ footer {
 .info, .info1 {
 	margin-top: 10px;
 	padding: 10px 14px;
-	background-color: #2d3e50;
+	background-color: #171733;
 	border-radius: 8px;
 	font-size: 14px;
 	line-height: 1.5;
-	color: white;
+	color: #ffffff;
 }
 .info.hidden, .info1.hidden {
   	display: none;
@@ -394,12 +403,12 @@ footer {
 	flex: 1;
 	margin: 2%;
 }
-.text1{
+.text1 {
 	padding: 20px;
 	margin: 20px 40px 0 40px;
-	background-color: white;
-	color: #1e1e1e;
-	border-color: #2d3e50;
+	background-color: #ffffff;
+	color: #171733;
+	border-color: #171733;
 	box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
 }
 .kontakt-zeile {
