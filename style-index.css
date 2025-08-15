@@ -20,6 +20,9 @@ html, body {
 h1, h2, h3, h4, h5 {
 	color: #171733;
 }
+h1{
+	color: #fafafa;
+}
 header { 
 	height: auto;
 	min-height: 500px;
